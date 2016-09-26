@@ -1,0 +1,7 @@
+platform:ios,'9.0'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'MJExtension'
+pod 'Masonry'
+pod 'Mantle'
+pod 'SDWebImage'
