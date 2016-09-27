@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180EDDB81D92753F001FF75E /* KZHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180EDDB71D92753F001FF75E /* KZHHttpTool.m */; };
+		1815A9CC1D98F9E80007BD6B /* KZHHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9CB1D98F9E80007BD6B /* KZHHttpResult.m */; };
+		1815A9CF1D990FA40007BD6B /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9CE1D990FA40007BD6B /* UIViewController+HUD.m */; };
+		1815A9D71D991A560007BD6B /* ArticleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9D61D991A560007BD6B /* ArticleListViewController.m */; };
+		1815A9DA1D991EBC0007BD6B /* NSString+StringWithUnichar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9D91D991EBC0007BD6B /* NSString+StringWithUnichar.m */; };
+		1815A9DD1D9920EC0007BD6B /* KZHArticleListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9DC1D9920EC0007BD6B /* KZHArticleListManager.m */; };
+		1815A9E01D9959E40007BD6B /* ArticleListHttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9DF1D9959E40007BD6B /* ArticleListHttpResult.m */; };
+		1815A9E31D995D550007BD6B /* ArticleListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9E21D995D550007BD6B /* ArticleListModel.m */; };
+		1815A9E61D9A132C0007BD6B /* ArticleListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9E51D9A132C0007BD6B /* ArticleListCell.m */; };
+		1815A9E91D9A526D0007BD6B /* ArticleListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9E81D9A526D0007BD6B /* ArticleListHeaderView.m */; };
+		1815A9F11D9A6CD90007BD6B /* WebViewPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9F01D9A6CD90007BD6B /* WebViewPageController.m */; };
+		181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181643541D98EBA6008CCF49 /* KZHHttpTool.m */; };
+		181643591D98EDCA008CCF49 /* KZHHttpParamTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181643581D98EDCA008CCF49 /* KZHHttpParamTool.m */; };
+		1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816435B1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m */; };
 		181F22C11D607C9300CC4C28 /* CustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F22C01D607C9300CC4C28 /* CustomCellTableViewCell.m */; };
 		181F234A1D75276200CC4C28 /* NSString+TransformToCN.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23491D75276200CC4C28 /* NSString+TransformToCN.m */; };
 		181F234D1D752A1000CC4C28 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F234C1D752A1000CC4C28 /* NSArray+Log.m */; };
@@ -47,8 +59,33 @@
 
 /* Begin PBXFileReference section */
 		0509DCF00E9FDBC0CD8EEAED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		180EDDB61D92753F001FF75E /* KZHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHHttpTool.h; sourceTree = "<group>"; };
-		180EDDB71D92753F001FF75E /* KZHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHHttpTool.m; sourceTree = "<group>"; };
+		1815A9CA1D98F9E80007BD6B /* KZHHttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHHttpResult.h; sourceTree = "<group>"; };
+		1815A9CB1D98F9E80007BD6B /* KZHHttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHHttpResult.m; sourceTree = "<group>"; };
+		1815A9CD1D990FA40007BD6B /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		1815A9CE1D990FA40007BD6B /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		1815A9D51D991A560007BD6B /* ArticleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListViewController.h; sourceTree = "<group>"; };
+		1815A9D61D991A560007BD6B /* ArticleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListViewController.m; sourceTree = "<group>"; };
+		1815A9D81D991EBC0007BD6B /* NSString+StringWithUnichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringWithUnichar.h"; sourceTree = "<group>"; };
+		1815A9D91D991EBC0007BD6B /* NSString+StringWithUnichar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringWithUnichar.m"; sourceTree = "<group>"; };
+		1815A9DB1D9920EC0007BD6B /* KZHArticleListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHArticleListManager.h; sourceTree = "<group>"; };
+		1815A9DC1D9920EC0007BD6B /* KZHArticleListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHArticleListManager.m; sourceTree = "<group>"; };
+		1815A9DE1D9959E40007BD6B /* ArticleListHttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListHttpResult.h; sourceTree = "<group>"; };
+		1815A9DF1D9959E40007BD6B /* ArticleListHttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListHttpResult.m; sourceTree = "<group>"; };
+		1815A9E11D995D550007BD6B /* ArticleListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListModel.h; sourceTree = "<group>"; };
+		1815A9E21D995D550007BD6B /* ArticleListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListModel.m; sourceTree = "<group>"; };
+		1815A9E41D9A132C0007BD6B /* ArticleListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListCell.h; sourceTree = "<group>"; };
+		1815A9E51D9A132C0007BD6B /* ArticleListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListCell.m; sourceTree = "<group>"; };
+		1815A9E71D9A526D0007BD6B /* ArticleListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleListHeaderView.h; sourceTree = "<group>"; };
+		1815A9E81D9A526D0007BD6B /* ArticleListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListHeaderView.m; sourceTree = "<group>"; };
+		1815A9EF1D9A6CD90007BD6B /* WebViewPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPageController.h; sourceTree = "<group>"; };
+		1815A9F01D9A6CD90007BD6B /* WebViewPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPageController.m; sourceTree = "<group>"; };
+		181643531D98EBA6008CCF49 /* KZHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHHttpTool.h; sourceTree = "<group>"; };
+		181643541D98EBA6008CCF49 /* KZHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHHttpTool.m; sourceTree = "<group>"; };
+		181643561D98EBCC008CCF49 /* NetDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefine.h; sourceTree = "<group>"; };
+		181643571D98EDCA008CCF49 /* KZHHttpParamTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHHttpParamTool.h; sourceTree = "<group>"; };
+		181643581D98EDCA008CCF49 /* KZHHttpParamTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHHttpParamTool.m; sourceTree = "<group>"; };
+		1816435A1D98EEE6008CCF49 /* NSDictionary+ForNSNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ForNSNull.h"; sourceTree = "<group>"; };
+		1816435B1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ForNSNull.m"; sourceTree = "<group>"; };
 		181F22BF1D607C9300CC4C28 /* CustomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellTableViewCell.h; sourceTree = "<group>"; };
 		181F22C01D607C9300CC4C28 /* CustomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellTableViewCell.m; sourceTree = "<group>"; };
 		181F233F1D72B7D900CC4C28 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
@@ -117,8 +154,107 @@
 		180EDDB51D9273D7001FF75E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				181643531D98EBA6008CCF49 /* KZHHttpTool.h */,
+				181643541D98EBA6008CCF49 /* KZHHttpTool.m */,
+				181643561D98EBCC008CCF49 /* NetDefine.h */,
+				181643571D98EDCA008CCF49 /* KZHHttpParamTool.h */,
+				181643581D98EDCA008CCF49 /* KZHHttpParamTool.m */,
+				1815A9CA1D98F9E80007BD6B /* KZHHttpResult.h */,
+				1815A9CB1D98F9E80007BD6B /* KZHHttpResult.m */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		1815A9D01D9918890007BD6B /* ArticleList */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9D11D9918890007BD6B /* Model */,
+				1815A9D21D9918890007BD6B /* Service */,
+				1815A9D31D9918890007BD6B /* VC */,
+				1815A9D41D9918890007BD6B /* View */,
+			);
+			path = ArticleList;
+			sourceTree = "<group>";
+		};
+		1815A9D11D9918890007BD6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9E11D995D550007BD6B /* ArticleListModel.h */,
+				1815A9E21D995D550007BD6B /* ArticleListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815A9D21D9918890007BD6B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9DB1D9920EC0007BD6B /* KZHArticleListManager.h */,
+				1815A9DC1D9920EC0007BD6B /* KZHArticleListManager.m */,
+				1815A9DE1D9959E40007BD6B /* ArticleListHttpResult.h */,
+				1815A9DF1D9959E40007BD6B /* ArticleListHttpResult.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1815A9D31D9918890007BD6B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9D51D991A560007BD6B /* ArticleListViewController.h */,
+				1815A9D61D991A560007BD6B /* ArticleListViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1815A9D41D9918890007BD6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9E41D9A132C0007BD6B /* ArticleListCell.h */,
+				1815A9E51D9A132C0007BD6B /* ArticleListCell.m */,
+				1815A9E71D9A526D0007BD6B /* ArticleListHeaderView.h */,
+				1815A9E81D9A526D0007BD6B /* ArticleListHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1815A9EA1D9A6CC30007BD6B /* WebViewPage */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9EB1D9A6CC30007BD6B /* Model */,
+				1815A9EC1D9A6CC30007BD6B /* Service */,
+				1815A9ED1D9A6CC30007BD6B /* VC */,
+				1815A9EE1D9A6CC30007BD6B /* View */,
+			);
+			path = WebViewPage;
+			sourceTree = "<group>";
+		};
+		1815A9EB1D9A6CC30007BD6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815A9EC1D9A6CC30007BD6B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1815A9ED1D9A6CC30007BD6B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9EF1D9A6CD90007BD6B /* WebViewPageController.h */,
+				1815A9F01D9A6CD90007BD6B /* WebViewPageController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1815A9EE1D9A6CC30007BD6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		181F22BE1D607C7D00CC4C28 /* View */ = {
@@ -151,8 +287,6 @@
 		181F23501D757EF800CC4C28 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				180EDDB61D92753F001FF75E /* KZHHttpTool.h */,
-				180EDDB71D92753F001FF75E /* KZHHttpTool.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -227,6 +361,12 @@
 			children = (
 				181F23781D83EF8500CC4C28 /* UIColor+ZSB.h */,
 				181F23791D83EF8500CC4C28 /* UIColor+ZSB.m */,
+				1816435A1D98EEE6008CCF49 /* NSDictionary+ForNSNull.h */,
+				1816435B1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m */,
+				1815A9CD1D990FA40007BD6B /* UIViewController+HUD.h */,
+				1815A9CE1D990FA40007BD6B /* UIViewController+HUD.m */,
+				1815A9D81D991EBC0007BD6B /* NSString+StringWithUnichar.h */,
+				1815A9D91D991EBC0007BD6B /* NSString+StringWithUnichar.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -270,6 +410,8 @@
 				181F22BE1D607C7D00CC4C28 /* View */,
 				181F234E1D757EF800CC4C28 /* Login */,
 				181F23561D757EFE00CC4C28 /* HomePage */,
+				1815A9D01D9918890007BD6B /* ArticleList */,
+				1815A9EA1D9A6CC30007BD6B /* WebViewPage */,
 				181F233F1D72B7D900CC4C28 /* Macro.h */,
 				181F23481D75276200CC4C28 /* NSString+TransformToCN.h */,
 				181F23491D75276200CC4C28 /* NSString+TransformToCN.m */,
@@ -504,17 +646,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1815A9E61D9A132C0007BD6B /* ArticleListCell.m in Sources */,
+				1815A9E01D9959E40007BD6B /* ArticleListHttpResult.m in Sources */,
+				1815A9CF1D990FA40007BD6B /* UIViewController+HUD.m in Sources */,
 				181F23631D75A8C300CC4C28 /* TableLoadHeaderView.m in Sources */,
-				180EDDB81D92753F001FF75E /* KZHHttpTool.m in Sources */,
+				181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */,
 				181F235D1D757EFE00CC4C28 /* HomePageVC.m in Sources */,
+				1815A9E91D9A526D0007BD6B /* ArticleListHeaderView.m in Sources */,
 				18A6F5B51D5B28950065186C /* AppDelegate.m in Sources */,
+				1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */,
 				181F234A1D75276200CC4C28 /* NSString+TransformToCN.m in Sources */,
+				1815A9E31D995D550007BD6B /* ArticleListModel.m in Sources */,
+				1815A9F11D9A6CD90007BD6B /* WebViewPageController.m in Sources */,
+				1815A9CC1D98F9E80007BD6B /* KZHHttpResult.m in Sources */,
 				181F234D1D752A1000CC4C28 /* NSArray+Log.m in Sources */,
 				181F237A1D83EF8500CC4C28 /* UIColor+ZSB.m in Sources */,
+				1815A9DD1D9920EC0007BD6B /* KZHArticleListManager.m in Sources */,
 				181F22C11D607C9300CC4C28 /* CustomCellTableViewCell.m in Sources */,
 				181F23731D83EAA500CC4C28 /* YBSwitchThreeView.m in Sources */,
+				1815A9DA1D991EBC0007BD6B /* NSString+StringWithUnichar.m in Sources */,
 				181F23661D75B4B000CC4C28 /* HomePageCell.m in Sources */,
+				1815A9D71D991A560007BD6B /* ArticleListViewController.m in Sources */,
 				181F23551D757EF800CC4C28 /* LoginViewController.m in Sources */,
+				181643591D98EDCA008CCF49 /* KZHHttpParamTool.m in Sources */,
 				181F23601D757F8300CC4C28 /* HomePageModel.m in Sources */,
 				18A6F5B21D5B28950065186C /* main.m in Sources */,
 			);

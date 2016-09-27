@@ -13,6 +13,9 @@
 #import "HomePageCell.h"
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
+#import "UIViewController+HUD.h"
+#import "ArticleListViewController.h"
+#import "NSString+StringWithUnichar.h"
 
 #define reuseID @"HomePageCellID"
 
@@ -29,8 +32,15 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    self.title = @"首页文章列表";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回😏" style:UIBarButtonItemStylePlain target:self action:@selector(backToNav)];
     [self addTableV];
     [self establishSessionLink];
+}
+- (void)backToNav
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)addTableV
@@ -50,6 +60,7 @@
 
 - (void)establishSessionLink
 {
+    [self showHint:@"正在加载"];
     NSString *urlStr = @"http://api.kanzhihu.com/getposts";
     NSURL *url = [NSURL URLWithString:urlStr];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30];
@@ -57,9 +68,7 @@
     [[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             NSDictionary *resDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-            NSLog(@"dic = %@", resDic);
-            NSLog(@"response = %@", response);
-//            [resDic writeToFile:@"/Users/apple/Desktop/gfgfg.plist" atomically:YES];
+//            [resDic writeToFile:@"/Users/apple/Desktop/github实验文件/看知乎/networkTestJsonFile.plist" atomically:YES];
             HomePageModel *model = [HomePageModel dicToModel:resDic];
             self.detailModelArr = model.posts;
             dispatch_async(dispatch_get_main_queue(), ^{
@@ -98,11 +107,24 @@
     return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 105;
-//}
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HomePageDetailModel *detailModel = self.detailModelArr[indexPath.row];
+    NSString *date = detailModel.date;
+    NSMutableString *mStr = [[NSMutableString alloc] init];
+    for (int i = 0; i < date.length; i++) {
+        unichar *c = [date characterAtIndex:i];
+        if (c != '-') {
+            NSString *tmpStr = [NSString stringWithUnichar:c];
+            [mStr appendString:tmpStr];
+        }
+    }
+    NSLog(@"%@", mStr);
+    ArticleListViewController *vc = [[ArticleListViewController alloc] init];
+    vc.timeParam = mStr;
+    vc.nameStr = detailModel.name;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 @end
