@@ -34,7 +34,8 @@
 {
     [super viewDidLoad];
     self.title = @"首页文章列表";
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回😏" style:UIBarButtonItemStylePlain target:self action:@selector(backToNav)];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"back_"] style:UIBarButtonItemStylePlain target:self action:@selector(backToNav)];
     [self addTableV];
     [self establishSessionLink];
 }
@@ -45,16 +46,28 @@
 
 - (void)addTableV
 {
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, kSCREENHEIGHT)];
+    CGFloat blankViewH = 30;
+    UIView *blankView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, blankViewH)];
+    [self.view addSubview:blankView];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, kSCREENWIDTH-10, 20)];
+    label.text = @"知乎，见识更大的世界😈";
+    label.layer.masksToBounds = YES;
+    label.layer.cornerRadius = 5;
+    label.alpha = 1;
+    label.backgroundColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    [blankView addSubview:label];
+    blankView.backgroundColor = [UIColor grayColor];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, blankViewH+64, kSCREENWIDTH, kSCREENHEIGHT-blankViewH-64)];
     [self.view addSubview:self.tableView];
-    TableLoadHeaderView *headerView = [[TableLoadHeaderView alloc] initWithFrame:CGRectMake(0, -20, kSCREENWIDTH, 20)];
+    TableLoadHeaderView *headerView = [[TableLoadHeaderView alloc] initWithFrame:CGRectMake(0, -40, kSCREENWIDTH, 40)];
     [_tableView addSubview:headerView];
     [_tableView registerClass:[HomePageCell class] forCellReuseIdentifier:reuseID];
     _tableView.estimatedRowHeight = 105;
     _tableView.rowHeight = UITableViewAutomaticDimension;
     _tableView.delegate = self;
     _tableView.dataSource = self;
-    _tableView.separatorColor = [UIColor clearColor];
+    _tableView.separatorColor = [UIColor lightGrayColor];
     _tableView.separatorInset = UIEdgeInsetsMake(15, 10, 0, 10);
 }
 
@@ -97,13 +110,38 @@
     if (!cell) {
         cell = [[HomePageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
     }
-//    cell.detailModel = detailModel;
     NSString *urlStr = detailModel.pic;
     NSURL *url = [NSURL URLWithString:urlStr];
     [cell.picView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"placeHolder"]];
-    cell.timeLabel.text = detailModel.date;
+    // 2016-07-30 -> 2016年07月30日
+    NSMutableString *mStr = [[NSMutableString alloc] init];
+    int index = 0;
+    for (int i = 0; i < detailModel.date.length; i++) {
+        unichar *c = [detailModel.date characterAtIndex:i];
+        if (c != '-') {
+            NSString *tmpStr = [NSString stringWithUnichar:c];
+            [mStr appendString:tmpStr];
+        } else if (c == '-') {
+            switch (index) {
+                case 0:
+                    [mStr appendString:@"年"];
+                    index++;
+                    break;
+                case 1:
+                    [mStr appendString:@"月"];
+                    index++;
+                    break;
+                default:
+                    NSLog(@"出错了 %i", index);
+                    break;
+            }
+        }
+    }
+    [mStr appendString:@"日精选文章"];
+    NSLog(@"%@", mStr);
+    cell.timeLabel.text = mStr;
     cell.excerpt = detailModel.excerpt;
-//    cell.excerptLabel.text = detailModel.excerpt;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

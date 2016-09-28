@@ -17,6 +17,7 @@
 		1815A9E61D9A132C0007BD6B /* ArticleListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9E51D9A132C0007BD6B /* ArticleListCell.m */; };
 		1815A9E91D9A526D0007BD6B /* ArticleListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9E81D9A526D0007BD6B /* ArticleListHeaderView.m */; };
 		1815A9F11D9A6CD90007BD6B /* WebViewPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9F01D9A6CD90007BD6B /* WebViewPageController.m */; };
+		1815A9F91D9BE2AB0007BD6B /* AuthorPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815A9F81D9BE2AB0007BD6B /* AuthorPageViewController.m */; };
 		181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181643541D98EBA6008CCF49 /* KZHHttpTool.m */; };
 		181643591D98EDCA008CCF49 /* KZHHttpParamTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181643581D98EDCA008CCF49 /* KZHHttpParamTool.m */; };
 		1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816435B1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m */; };
@@ -79,6 +80,8 @@
 		1815A9E81D9A526D0007BD6B /* ArticleListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleListHeaderView.m; sourceTree = "<group>"; };
 		1815A9EF1D9A6CD90007BD6B /* WebViewPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewPageController.h; sourceTree = "<group>"; };
 		1815A9F01D9A6CD90007BD6B /* WebViewPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewPageController.m; sourceTree = "<group>"; };
+		1815A9F71D9BE2AB0007BD6B /* AuthorPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorPageViewController.h; sourceTree = "<group>"; };
+		1815A9F81D9BE2AB0007BD6B /* AuthorPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorPageViewController.m; sourceTree = "<group>"; };
 		181643531D98EBA6008CCF49 /* KZHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KZHHttpTool.h; sourceTree = "<group>"; };
 		181643541D98EBA6008CCF49 /* KZHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KZHHttpTool.m; sourceTree = "<group>"; };
 		181643561D98EBCC008CCF49 /* NetDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetDefine.h; sourceTree = "<group>"; };
@@ -257,6 +260,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		1815A9F21D9BE2920007BD6B /* AuthorPage */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9F31D9BE2920007BD6B /* Model */,
+				1815A9F41D9BE2920007BD6B /* Service */,
+				1815A9F51D9BE2920007BD6B /* VC */,
+				1815A9F61D9BE2920007BD6B /* View */,
+			);
+			name = AuthorPage;
+			path = test/AuthorPage;
+			sourceTree = "<group>";
+		};
+		1815A9F31D9BE2920007BD6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1815A9F41D9BE2920007BD6B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1815A9F51D9BE2920007BD6B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				1815A9F71D9BE2AB0007BD6B /* AuthorPageViewController.h */,
+				1815A9F81D9BE2AB0007BD6B /* AuthorPageViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		1815A9F61D9BE2920007BD6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		181F22BE1D607C7D00CC4C28 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				18A6F5AF1D5B28950065186C /* test */,
+				1815A9F21D9BE2920007BD6B /* AuthorPage */,
 				181F234B1D752A1000CC4C28 /* NSArray+Log.h */,
 				181F234C1D752A1000CC4C28 /* NSArray+Log.m */,
 				18A6F5C91D5B28950065186C /* testTests */,
@@ -652,6 +698,7 @@
 				181F23631D75A8C300CC4C28 /* TableLoadHeaderView.m in Sources */,
 				181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */,
 				181F235D1D757EFE00CC4C28 /* HomePageVC.m in Sources */,
+				1815A9F91D9BE2AB0007BD6B /* AuthorPageViewController.m in Sources */,
 				1815A9E91D9A526D0007BD6B /* ArticleListHeaderView.m in Sources */,
 				18A6F5B51D5B28950065186C /* AppDelegate.m in Sources */,
 				1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */,

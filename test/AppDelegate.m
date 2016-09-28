@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "HomePageVC.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,10 @@
     
     UIWindow *window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.window = window;
-    LoginViewController *logVC = [[LoginViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:logVC];
+//    LoginViewController *logVC = [[LoginViewController alloc] init];
+    HomePageVC *vc = [[HomePageVC alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:logVC];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     window.rootViewController = nav;
     [window makeKeyAndVisible];
     

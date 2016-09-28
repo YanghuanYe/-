@@ -14,6 +14,7 @@
 #import "ArticleListCell.h"
 #import "ArticleListHeaderView.h"
 #import "WebViewPageController.h"
+#import "AuthorPageViewController.h"
 
 #define cellID @"ArticleListCell"
 #define AnswerPageBaseAPI @"https://www.zhihu.com/question"
@@ -112,6 +113,7 @@
     }
     [cell passToData:model];
     cell.delegate = self;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -129,6 +131,12 @@
     WebViewPageController *webVC = [[WebViewPageController alloc] init];
     webVC.request = request;
     [self.navigationController pushViewController:webVC animated:YES];
+}
+- (void)jumpToAuthorPageVC:(NSString *)authorhash
+{
+    AuthorPageViewController *vc = [[AuthorPageViewController alloc] init];
+    vc.authorhash = authorhash;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

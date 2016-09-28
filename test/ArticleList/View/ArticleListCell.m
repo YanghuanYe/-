@@ -64,7 +64,7 @@
     [self.avatarView addGestureRecognizer:avatarViewTap];
 //    作者
     self.authornameView.text = model.authorname;
-    UITapGestureRecognizer *authornameViewTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(jumpToUserHomePage)];
+    UITapGestureRecognizer *authornameViewTap =  [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(jumpToAuthorVC)];
     [self.authornameView addGestureRecognizer:authornameViewTap];
     self.authornameView.userInteractionEnabled = YES;
 //    问题
@@ -137,6 +137,12 @@
     self.webViewPageRequest = request;
     if (self.delegate && [self.delegate respondsToSelector:@selector(jumpToWebViewPageVC:)]) {
         [self.delegate jumpToWebViewPageVC:request];
+    }
+}
+- (void)jumpToAuthorVC
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(jumpToAuthorPageVC:)]) {
+        [self.delegate jumpToAuthorPageVC:self.model.authorhash];
     }
 }
 

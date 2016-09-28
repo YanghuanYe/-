@@ -14,6 +14,7 @@
 @protocol ArticleListCellDelegate <NSObject>
 
 - (void)jumpToWebViewPageVC:(NSURLRequest *)request;
+- (void)jumpToAuthorPageVC:(NSString *)authorhash;
 
 @end
 
