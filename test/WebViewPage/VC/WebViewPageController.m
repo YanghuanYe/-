@@ -26,6 +26,7 @@
 {
     UIWebView *webV = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, kSCREENHEIGHT)];
     [self.view addSubview:webV];
+    webV.scalesPageToFit = YES;
     [webV loadRequest:self.request];
 }
 
