@@ -8,10 +8,13 @@
 
 #import "AuthorPageViewController.h"
 #import <MJExtension.h>
+#import "Macro.h"
 
 #define userdetail2_API @"http://api.kanzhihu.com/userdetail2"
 
-@interface AuthorPageViewController ()
+@interface AuthorPageViewController () <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong)UITableView *authorInfoList;
 
 @end
 
@@ -21,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    [self addAuthorInfoList];
     [self requestForGetUserDetail];
 }
 - (void)requestForGetUserDetail
@@ -39,6 +43,13 @@
             NSLog(@"%@", error.description);
         }
     }] resume];
+}
+- (void)addAuthorInfoList
+{
+    UITableView *list = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSCREENWIDTH, kSCREENHEIGHT) style:UITableViewStyleGrouped];
+    self.authorInfoList = list;
+    [self.view addSubview:list];
+    
 }
 
 - (void)didReceiveMemoryWarning {

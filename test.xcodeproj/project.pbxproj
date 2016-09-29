@@ -22,7 +22,6 @@
 		181643591D98EDCA008CCF49 /* KZHHttpParamTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181643581D98EDCA008CCF49 /* KZHHttpParamTool.m */; };
 		1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816435B1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m */; };
 		181F22C11D607C9300CC4C28 /* CustomCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F22C01D607C9300CC4C28 /* CustomCellTableViewCell.m */; };
-		181F234A1D75276200CC4C28 /* NSString+TransformToCN.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23491D75276200CC4C28 /* NSString+TransformToCN.m */; };
 		181F234D1D752A1000CC4C28 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F234C1D752A1000CC4C28 /* NSArray+Log.m */; };
 		181F23551D757EF800CC4C28 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23531D757EF800CC4C28 /* LoginViewController.m */; };
 		181F235D1D757EFE00CC4C28 /* HomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F235B1D757EFE00CC4C28 /* HomePageVC.m */; };
@@ -31,6 +30,8 @@
 		181F23661D75B4B000CC4C28 /* HomePageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23651D75B4B000CC4C28 /* HomePageCell.m */; };
 		181F23731D83EAA500CC4C28 /* YBSwitchThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23721D83EAA500CC4C28 /* YBSwitchThreeView.m */; };
 		181F237A1D83EF8500CC4C28 /* UIColor+ZSB.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23791D83EF8500CC4C28 /* UIColor+ZSB.m */; };
+		18237A6D1D9CAD0800801996 /* NSString+TransformToCN.m in Sources */ = {isa = PBXBuildFile; fileRef = 18237A6C1D9CAD0800801996 /* NSString+TransformToCN.m */; };
+		18237A701D9CB4CE00801996 /* AuthorInfoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */; };
 		18A6F5B21D5B28950065186C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F5B11D5B28950065186C /* main.m */; };
 		18A6F5B51D5B28950065186C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F5B41D5B28950065186C /* AppDelegate.m */; };
 		18A6F5BB1D5B28950065186C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A6F5B91D5B28950065186C /* Main.storyboard */; };
@@ -92,8 +93,6 @@
 		181F22BF1D607C9300CC4C28 /* CustomCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellTableViewCell.h; sourceTree = "<group>"; };
 		181F22C01D607C9300CC4C28 /* CustomCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellTableViewCell.m; sourceTree = "<group>"; };
 		181F233F1D72B7D900CC4C28 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		181F23481D75276200CC4C28 /* NSString+TransformToCN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TransformToCN.h"; sourceTree = "<group>"; };
-		181F23491D75276200CC4C28 /* NSString+TransformToCN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TransformToCN.m"; sourceTree = "<group>"; };
 		181F234B1D752A1000CC4C28 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		181F234C1D752A1000CC4C28 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		181F23521D757EF800CC4C28 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -110,6 +109,10 @@
 		181F23721D83EAA500CC4C28 /* YBSwitchThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSwitchThreeView.m; sourceTree = "<group>"; };
 		181F23781D83EF8500CC4C28 /* UIColor+ZSB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZSB.h"; sourceTree = "<group>"; };
 		181F23791D83EF8500CC4C28 /* UIColor+ZSB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZSB.m"; sourceTree = "<group>"; };
+		18237A6B1D9CAD0800801996 /* NSString+TransformToCN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TransformToCN.h"; sourceTree = "<group>"; };
+		18237A6C1D9CAD0800801996 /* NSString+TransformToCN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TransformToCN.m"; sourceTree = "<group>"; };
+		18237A6E1D9CB4CE00801996 /* AuthorInfoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorInfoListCell.h; sourceTree = "<group>"; };
+		18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorInfoListCell.m; sourceTree = "<group>"; };
 		18A6F5AD1D5B28950065186C /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6F5B11D5B28950065186C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A6F5B31D5B28950065186C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -298,6 +301,8 @@
 		1815A9F61D9BE2920007BD6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18237A6E1D9CB4CE00801996 /* AuthorInfoListCell.h */,
+				18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -412,6 +417,8 @@
 				1815A9CE1D990FA40007BD6B /* UIViewController+HUD.m */,
 				1815A9D81D991EBC0007BD6B /* NSString+StringWithUnichar.h */,
 				1815A9D91D991EBC0007BD6B /* NSString+StringWithUnichar.m */,
+				18237A6B1D9CAD0800801996 /* NSString+TransformToCN.h */,
+				18237A6C1D9CAD0800801996 /* NSString+TransformToCN.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -459,8 +466,6 @@
 				1815A9D01D9918890007BD6B /* ArticleList */,
 				1815A9EA1D9A6CC30007BD6B /* WebViewPage */,
 				181F233F1D72B7D900CC4C28 /* Macro.h */,
-				181F23481D75276200CC4C28 /* NSString+TransformToCN.h */,
-				181F23491D75276200CC4C28 /* NSString+TransformToCN.m */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -696,13 +701,13 @@
 				1815A9E01D9959E40007BD6B /* ArticleListHttpResult.m in Sources */,
 				1815A9CF1D990FA40007BD6B /* UIViewController+HUD.m in Sources */,
 				181F23631D75A8C300CC4C28 /* TableLoadHeaderView.m in Sources */,
+				18237A701D9CB4CE00801996 /* AuthorInfoListCell.m in Sources */,
 				181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */,
 				181F235D1D757EFE00CC4C28 /* HomePageVC.m in Sources */,
 				1815A9F91D9BE2AB0007BD6B /* AuthorPageViewController.m in Sources */,
 				1815A9E91D9A526D0007BD6B /* ArticleListHeaderView.m in Sources */,
 				18A6F5B51D5B28950065186C /* AppDelegate.m in Sources */,
 				1816435C1D98EEE6008CCF49 /* NSDictionary+ForNSNull.m in Sources */,
-				181F234A1D75276200CC4C28 /* NSString+TransformToCN.m in Sources */,
 				1815A9E31D995D550007BD6B /* ArticleListModel.m in Sources */,
 				1815A9F11D9A6CD90007BD6B /* WebViewPageController.m in Sources */,
 				1815A9CC1D98F9E80007BD6B /* KZHHttpResult.m in Sources */,
@@ -711,6 +716,7 @@
 				1815A9DD1D9920EC0007BD6B /* KZHArticleListManager.m in Sources */,
 				181F22C11D607C9300CC4C28 /* CustomCellTableViewCell.m in Sources */,
 				181F23731D83EAA500CC4C28 /* YBSwitchThreeView.m in Sources */,
+				18237A6D1D9CAD0800801996 /* NSString+TransformToCN.m in Sources */,
 				1815A9DA1D991EBC0007BD6B /* NSString+StringWithUnichar.m in Sources */,
 				181F23661D75B4B000CC4C28 /* HomePageCell.m in Sources */,
 				1815A9D71D991A560007BD6B /* ArticleListViewController.m in Sources */,
