@@ -30,21 +30,21 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier authorCellType:(authorCellType)type
 {
     if (self = [self initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        switch (authorCellType) {
+        switch (type) {
             case authorUniversalCell:
-                <#statements#>
+                [self addAuthorUniversalCell];
                 break;
             case authorDetailCell:
-                <#statements#>
+                [self addAuthorDetailCell];
                 break;
             case authorStarCell:
-                <#statements#>
+                [self addAuthorStarCell];
                 break;
             case authorTopAnswerCell:
-                <#statements#>
+                [self addAuthorTopAnswerCell];
                 break;
             case authorTrendCell:
-                <#statements#>
+                [self addAuthorTrendCell];
                 break;
             default:
                 break;
@@ -54,6 +54,18 @@
 }
 - (void)addAuthorUniversalCell
 {
+    
+}
+- (void)addAuthorDetailCell {
+    
+}
+- (void)addAuthorStarCell {
+    
+}
+- (void)addAuthorTopAnswerCell {
+    
+}
+- (void)addAuthorTrendCell {
     
 }
 

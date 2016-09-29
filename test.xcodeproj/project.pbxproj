@@ -31,7 +31,7 @@
 		181F23731D83EAA500CC4C28 /* YBSwitchThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23721D83EAA500CC4C28 /* YBSwitchThreeView.m */; };
 		181F237A1D83EF8500CC4C28 /* UIColor+ZSB.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F23791D83EF8500CC4C28 /* UIColor+ZSB.m */; };
 		18237A6D1D9CAD0800801996 /* NSString+TransformToCN.m in Sources */ = {isa = PBXBuildFile; fileRef = 18237A6C1D9CAD0800801996 /* NSString+TransformToCN.m */; };
-		18237A701D9CB4CE00801996 /* AuthorInfoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */; };
+		18237A721D9CF04500801996 /* AuthorInfoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18237A711D9CF04500801996 /* AuthorInfoListCell.m */; };
 		18A6F5B21D5B28950065186C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F5B11D5B28950065186C /* main.m */; };
 		18A6F5B51D5B28950065186C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6F5B41D5B28950065186C /* AppDelegate.m */; };
 		18A6F5BB1D5B28950065186C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A6F5B91D5B28950065186C /* Main.storyboard */; };
@@ -112,7 +112,7 @@
 		18237A6B1D9CAD0800801996 /* NSString+TransformToCN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TransformToCN.h"; sourceTree = "<group>"; };
 		18237A6C1D9CAD0800801996 /* NSString+TransformToCN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TransformToCN.m"; sourceTree = "<group>"; };
 		18237A6E1D9CB4CE00801996 /* AuthorInfoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorInfoListCell.h; sourceTree = "<group>"; };
-		18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorInfoListCell.m; sourceTree = "<group>"; };
+		18237A711D9CF04500801996 /* AuthorInfoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorInfoListCell.m; sourceTree = "<group>"; };
 		18A6F5AD1D5B28950065186C /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6F5B11D5B28950065186C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18A6F5B31D5B28950065186C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				18237A6E1D9CB4CE00801996 /* AuthorInfoListCell.h */,
-				18237A6F1D9CB4CE00801996 /* AuthorInfoListCell.m */,
+				18237A711D9CF04500801996 /* AuthorInfoListCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -701,7 +701,7 @@
 				1815A9E01D9959E40007BD6B /* ArticleListHttpResult.m in Sources */,
 				1815A9CF1D990FA40007BD6B /* UIViewController+HUD.m in Sources */,
 				181F23631D75A8C300CC4C28 /* TableLoadHeaderView.m in Sources */,
-				18237A701D9CB4CE00801996 /* AuthorInfoListCell.m in Sources */,
+				18237A721D9CF04500801996 /* AuthorInfoListCell.m in Sources */,
 				181643551D98EBA6008CCF49 /* KZHHttpTool.m in Sources */,
 				181F235D1D757EFE00CC4C28 /* HomePageVC.m in Sources */,
 				1815A9F91D9BE2AB0007BD6B /* AuthorPageViewController.m in Sources */,
