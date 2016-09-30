@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>avatar</key>
-	<string>https://pic4.zhimg.com/9f7111d004add2bda14b2daf794a6e93_l.jpg</string>
+	<string>https://pic1.zhimg.com/v2-171b73ddb154e99a8c57a85773ce3e3c_l.jpg</string>
 	<key>description</key>
-	<string>窝开心就好 毕竟有最棒男盆友ฅʕ•̫͡•ʔฅ</string>
+	<string>还是本人，不过升级成官方了:)</string>
 	<key>detail</key>
 	<dict>
 		<key>agree</key>
-		<string>1070</string>
+		<string>3948</string>
 		<key>agreei</key>
 		<string>0</string>
 		<key>agreeiratio</key>
@@ -19,9 +19,9 @@
 		<key>agreeiw</key>
 		<string>0</string>
 		<key>answer</key>
-		<string>1</string>
+		<string>3</string>
 		<key>ask</key>
-		<string>0</string>
+		<string>1</string>
 		<key>count100</key>
 		<string>1</string>
 		<key>count1000</key>
@@ -31,17 +31,17 @@
 		<key>count200</key>
 		<string>1</string>
 		<key>count2000</key>
-		<string>0</string>
+		<string>1</string>
 		<key>count500</key>
 		<string>1</string>
 		<key>count5000</key>
 		<string>0</string>
 		<key>fav</key>
-		<string>303</string>
+		<string>1172</string>
 		<key>followee</key>
-		<string>78</string>
+		<string>17</string>
 		<key>follower</key>
-		<string>599</string>
+		<string>3478</string>
 		<key>followeri</key>
 		<string>0</string>
 		<key>followeriw</key>
@@ -51,109 +51,113 @@
 		<key>followiratiow</key>
 		<string>0</string>
 		<key>fratio</key>
-		<string>0.2832</string>
+		<string>0.2969</string>
 		<key>logs</key>
-		<string>0</string>
+		<string>5</string>
 		<key>mostvote</key>
-		<string>1070</string>
+		<string>3943</string>
 		<key>mostvote10</key>
-		<string>1070</string>
+		<string>3948</string>
 		<key>mostvote10percent</key>
 		<string>100.00%</string>
 		<key>mostvote5</key>
-		<string>1070</string>
+		<string>3948</string>
 		<key>mostvote5percent</key>
 		<string>100.00%</string>
 		<key>mostvotepercent</key>
-		<string>100.00%</string>
+		<string>99.87%</string>
 		<key>post</key>
 		<string>0</string>
 		<key>ratio</key>
-		<string>1070.00</string>
+		<string>1316.00</string>
 		<key>thanks</key>
-		<string>217</string>
+		<string>686</string>
 		<key>tratio</key>
-		<string>0.2028</string>
+		<string>0.1738</string>
 	</dict>
 	<key>error</key>
 	<string></string>
 	<key>name</key>
-	<string>小千</string>
+	<string>Mavic</string>
 	<key>signature</key>
-	<string></string>
+	<string>DJI大疆研发官方发言人</string>
 	<key>star</key>
 	<dict>
 		<key>agreerank</key>
-		<string>43973</string>
+		<string>16189</string>
 		<key>answerrank</key>
-		<string>121369</string>
+		<string>116736</string>
 		<key>count1000rank</key>
 		<string>7931</string>
 		<key>count100rank</key>
 		<string>47062</string>
 		<key>favrank</key>
-		<string>50640</string>
+		<string>21636</string>
 		<key>followerrank</key>
-		<string>21291</string>
+		<string>5717</string>
 		<key>ratiorank</key>
-		<string>2045</string>
+		<string>1538</string>
 	</dict>
 	<key>topanswers</key>
 	<array>
 		<dict>
 			<key>agree</key>
-			<string>1070</string>
+			<string>3943</string>
 			<key>date</key>
-			<string>2016-09-24 15:12:45</string>
+			<string>2016-09-28 02:06:35</string>
 			<key>ispost</key>
 			<string>0</string>
 			<key>link</key>
-			<string>/question/35931586/answer/123453733</string>
+			<string>/question/50964912/answer/123992298</string>
 			<key>title</key>
-			<string>你的日常搭配是什么样子？</string>
+			<string>如何评价大疆创新发布的新产品 Mavic（御）？</string>
+		</dict>
+		<dict>
+			<key>agree</key>
+			<string>3</string>
+			<key>date</key>
+			<string>2015-07-29 13:30:28</string>
+			<key>ispost</key>
+			<string>0</string>
+			<key>link</key>
+			<string>/question/32106605/answer/56911672</string>
+			<key>title</key>
+			<string>应届毕业生面试无人机公司，需要准备什么？</string>
+		</dict>
+		<dict>
+			<key>agree</key>
+			<string>2</string>
+			<key>date</key>
+			<string>2015-04-06 10:57:03</string>
+			<key>ispost</key>
+			<string>0</string>
+			<key>link</key>
+			<string>/question/26347414/answer/43985180</string>
+			<key>title</key>
+			<string>从事汽车 NVH 这块的就业前景如何？</string>
 		</dict>
 	</array>
 	<key>trend</key>
 	<array>
 		<dict>
 			<key>agree</key>
-			<string>467</string>
+			<string>3058</string>
 			<key>answer</key>
-			<string>1</string>
-			<key>date</key>
-			<string>2016-09-27</string>
-			<key>follower</key>
-			<string>266</string>
-		</dict>
-		<dict>
-			<key>agree</key>
-			<string>920</string>
-			<key>answer</key>
-			<string>1</string>
-			<key>date</key>
-			<string>2016-09-28</string>
-			<key>follower</key>
-			<string>505</string>
-		</dict>
-		<dict>
-			<key>agree</key>
-			<string>993</string>
-			<key>answer</key>
-			<string>1</string>
+			<string>3</string>
 			<key>date</key>
 			<string>2016-09-29</string>
 			<key>follower</key>
-			<string>554</string>
+			<string>2528</string>
 		</dict>
 		<dict>
 			<key>agree</key>
-			<string>1070</string>
+			<string>3948</string>
 			<key>answer</key>
-			<string>1</string>
+			<string>3</string>
 			<key>date</key>
 			<string>2016-09-30</string>
 			<key>follower</key>
-			<string>599</string>
+			<string>3478</string>
 		</dict>
 	</array>
 </dict>

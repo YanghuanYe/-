@@ -9,12 +9,14 @@
 #import "AuthorPageViewController.h"
 #import <MJExtension.h>
 #import "Macro.h"
+#import "AuthorInfoListModel.h"
 
 #define userdetail2_API @"http://api.kanzhihu.com/userdetail2"
 
 @interface AuthorPageViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *authorInfoList;
+@property (nonatomic, strong)AuthorInfoListModel *infoListModel;
 
 @end
 
@@ -24,21 +26,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    [self addAuthorInfoList];
+//    [self addAuthorInfoList];
     [self requestForGetUserDetail];
 }
 - (void)requestForGetUserDetail
 {
-//    NSString *baseURL = userdetail2_API;
-//    NSMutableString *mStr = [[NSMutableString alloc] init];
-//    [mStr appendString:baseURL];
-//    [mStr appendFormat:@"/%@", self.authorhash];
-    NSString *	mStr = @"http://www.zhihu.com/question/37018823/answer/117589556";
+    NSString *baseURL = userdetail2_API;
+    NSMutableString *mStr = [[NSMutableString alloc] init];
+    [mStr appendString:baseURL];
+    [mStr appendFormat:@"/%@", self.authorhash];
     NSURL *getDetailURL = [NSURL URLWithString:mStr];
     [[[NSURLSession sharedSession] dataTaskWithURL:getDetailURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
             [dic writeToFile:@"/Users/apple/Desktop/github实验文件/看知乎/networkTestJsonFile.plist" atomically:YES];
+            AuthorInfoListModel *model = [AuthorInfoListModel mj_objectWithKeyValues:dic];
+            self.infoListModel = model;
+            NSLog(@"dd");
+            NSLog(@"%d", self.infoListModel.topanswers.count);
+            
+            AuthorInfoListTopAnswerModel *topAnswerModel = self.infoListModel.topanswers[0];
+            NSLog(@"%@", topAnswerModel);
         } else {
             NSLog(@"%@", error.description);
         }
