@@ -39,7 +39,7 @@
     [[[NSURLSession sharedSession] dataTaskWithURL:getDetailURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-            [dic writeToFile:@"/Users/apple/Desktop/github实验文件/看知乎/networkTestJsonFile.plist" atomically:YES];
+//            [dic writeToFile:@"/Users/apple/Desktop/github实验文件/看知乎/networkTestJsonFile.plist" atomically:YES];
             AuthorInfoListModel *model = [AuthorInfoListModel mj_objectWithKeyValues:dic];
             self.infoListModel = model;
             NSLog(@"dd");

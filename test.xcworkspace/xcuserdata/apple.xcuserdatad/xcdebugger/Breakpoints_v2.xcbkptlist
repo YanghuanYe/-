@@ -52,12 +52,12 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/github%E5%AE%9E%E9%AA%8C%E6%96%87%E4%BB%B6/%E7%9C%8B%E7%9F%A5%E4%B9%8E/test/AuthorPage/VC/AuthorPageViewController.m"
-                  timestampString = "496911413.211948"
+                  timestampString = "497323724.676548"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "690">
+                  offsetFromSymbolStart = "563">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -67,12 +67,12 @@
                   moduleName = "test"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/apple/Desktop/github%E5%AE%9E%E9%AA%8C%E6%96%87%E4%BB%B6/%E7%9C%8B%E7%9F%A5%E4%B9%8E/test/AuthorPage/VC/AuthorPageViewController.m"
-                  timestampString = "496911413.215373"
+                  timestampString = "497323724.678884"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "50"
                   endingLineNumber = "50"
-                  offsetFromSymbolStart = "730">
+                  offsetFromSymbolStart = "607">
                </Location>
             </Locations>
          </BreakpointContent>
